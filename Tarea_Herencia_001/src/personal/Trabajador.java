@@ -51,9 +51,10 @@ public class Trabajador extends Persona {
         sue = (horas_trabajadas * costo_por_hora) + costo_seguro;
         return sue;
     }
+
     @Override
-    public String toString(){
-        String cadena = String.format("%s\tSeguro: $ %d\n\tHoras trabajadas: %d\n\tValor por hora: $ %d\n\tSueldo: $ %d\n",
+    public String toString() {
+        String cadena = String.format("%s\t\tSeguro: $ %.0f\n\t\tHoras trabajadas: %.0f\n\t\tValor por hora: $ %.0f\n\t\tSueldo: $ %.0f\n\t",
                 super.toString(), obtener_costo_seguro(), obtener_horas_trabajadas(), obtener_costo_por_hora(), obtener_sueldo());
         return cadena;
     }

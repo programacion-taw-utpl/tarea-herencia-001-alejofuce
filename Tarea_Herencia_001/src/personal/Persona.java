@@ -57,7 +57,7 @@ public class Persona {
 
     @Override
     public String toString() {
-        String cadena = String.format("%s %s\n\t%d años de edad\n\tCI: %d\n",
+        String cadena = String.format("%s %s\n\t\t%d años de edad\n\t\tCI: %s\n",
                 obtener_nombres(), obtener_apellidos(), obtener_edad(), obtener_cedula());
         return cadena;
     }
